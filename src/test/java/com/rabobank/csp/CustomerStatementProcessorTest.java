@@ -39,7 +39,7 @@ public class CustomerStatementProcessorTest {
 			int totalNoOfLinesInputXML = 10;
 			List<Record> getRecords = executorServiceImpl
 					.parseFromXML(inputFile);
-			assertEquals(totalNoOfLinesInputXML - 1, getRecords.size());
+			assertEquals(totalNoOfLinesInputXML, getRecords.size());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
